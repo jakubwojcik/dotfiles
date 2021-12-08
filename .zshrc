@@ -1,0 +1,37 @@
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="bira"
+
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+LS_COLORS="ow=01;36;40" && export LS_COLORS
+
+unsetopt BEEP
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+source <(kubectl completion zsh)
+source <(oc completion zsh)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+function openall() {
+  for folder in */; do
+    code $folder;
+  done
+}
+
+# WSL-related
+alias explorer="explorer.exe"
+alias cdpw="cd /mnt/c/Users/Jakub/Projekty"
+alias cdpl="cd ~/projects"
+
+# Work-related
+export NODE_EXTRA_CA_CERTS="$HOME/documents/cacert.pem"
