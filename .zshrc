@@ -3,18 +3,13 @@ ZSH_THEME="bira"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 LS_COLORS="ow=01;36;40" && export LS_COLORS
 
 unsetopt BEEP
-
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-source <(kubectl completion zsh)
-source <(oc completion zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
