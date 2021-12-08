@@ -28,6 +28,8 @@ function openall() {
   done
 }
 
+alias ap="ansible-playbook"
+
 # WSL-related
 alias explorer="explorer.exe"
 alias cdpw="cd /mnt/c/Users/Jakub/Projekty"
