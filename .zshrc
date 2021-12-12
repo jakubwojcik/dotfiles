@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="bira"
+ZSH_THEME="eastwood"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 

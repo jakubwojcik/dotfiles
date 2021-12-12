@@ -1,0 +1,9 @@
+{
+    "svn.ignoreMissingSvnWarning": true,
+    "workbench.colorCustomizations": {
+        "titleBar.activeForeground": "#fff",
+        "titleBar.inactiveForeground": "#fff",
+        "titleBar.activeBackground": "#45009ecc",
+        "titleBar.inactiveBackground": "#3b1074cc"
+      }
+}
