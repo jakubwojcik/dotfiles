@@ -3,7 +3,7 @@ ZSH_THEME="eastwood"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -22,8 +22,6 @@ function openall() {
     code $folder;
   done
 }
-
-alias ap="ansible-playbook"
 
 # WSL-related
 alias explorer="explorer.exe"
